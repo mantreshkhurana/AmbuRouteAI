@@ -52,7 +52,7 @@ Live Video Input Webcam / CCTV Feed
 
 1️⃣ Clone the Repository
 
-git clone <https://github.com/mantreshkhurana/AmbuRouteAI.git>
+git clone https://github.com/mantreshkhurana/AmbuRouteAI.git
 cd AmbuRouteAI
 
 2️⃣ Install Dependencies
