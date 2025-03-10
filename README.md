@@ -79,10 +79,10 @@ python main.py --source 0
 
 🎯 Future Enhancements
 
-🔹 Integrate with Google Maps API – Real-time traffic data for route optimization.
-🔹 IoT-Based Smart Traffic Signals – Connect with Raspberry Pi & Arduino for real-world applications.
-🔹 Hospital Alert System – Send emergency notifications to hospitals about incoming patients.
-🔹 Mobile App Interface – Develop an ambulance tracking app with live traffic updates.
+- [ ] Integrate with Google Maps API – Real-time traffic data for route optimization.
+- [ ] IoT-Based Smart Traffic Signals – Connect with Raspberry Pi & Arduino for real-world applications.
+- [ ] Hospital Alert System – Send emergency notifications to hospitals about incoming patients.
+- [ ] Mobile App Interface – Develop an ambulance tracking app with live traffic updates.
 
 ⸻
 
