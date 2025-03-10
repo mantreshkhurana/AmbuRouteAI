@@ -89,6 +89,7 @@ python main.py --source 0
 📸 Demo & Screenshots
 
 📌 Detecting an ambulance and switching the traffic light in real-time.
+![Screenshot](screenshots/screenshot-1.png)
 
 ⸻
 

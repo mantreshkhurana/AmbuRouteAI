@@ -14,8 +14,8 @@ from flask import Flask, request, jsonify
 from geopy.distance import geodesic
 
 
-GOOGLE_MAPS_API_KEY = "YOUR_GOOGLE_MAPS_API_KEY"
-gmaps = googlemaps.Client(key=GOOGLE_MAPS_API_KEY)
+# GOOGLE_MAPS_API_KEY = "YOUR_GOOGLE_MAPS_API_KEY"
+# gmaps = googlemaps.Client(key=GOOGLE_MAPS_API_KEY)
 
 
 model = YOLO("yolov8n.pt")
