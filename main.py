@@ -1,3 +1,10 @@
+'''
+Author: Manntresh khurana
+Repository:
+Date: 10-03-2025
+Description: This is the main file for the AI Traffic Signal Control System.
+'''
+
 import cv2
 import numpy as np
 from ultralytics import YOLO
