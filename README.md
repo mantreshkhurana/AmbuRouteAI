@@ -29,10 +29,10 @@ Live Video Input Webcam / CCTV Feed
 
 📜 How It Works
 
-1️⃣ AI-Powered Detection – YOLOv8 identifies ambulances in real-time from traffic video feeds.
-2️⃣ Traffic Light Control – If an ambulance is detected, the traffic light turns green; otherwise, it remains red.
-3️⃣ Visual Alerts & UI – The system draws bounding boxes around detected ambulances and simulates traffic signals.
-4️⃣ Extensibility – The project can integrate with Google Maps API & IoT sensors for smarter city-wide traffic control.
+1️. AI-Powered Detection – YOLOv8 identifies ambulances in real-time from traffic video feeds.
+2️. Traffic Light Control – If an ambulance is detected, the traffic light turns green; otherwise, it remains red.
+3️. Visual Alerts & UI – The system draws bounding boxes around detected ambulances and simulates traffic signals.
+4️. Extensibility – The project can integrate with Google Maps API & IoT sensors for smarter city-wide traffic control.
 
 ⸻
 
@@ -63,7 +63,7 @@ pip install -r requirements.txt
 
 Download the pre-trained YOLOv8 model from Ultralytics and place it in the models folder.
 
-wget <https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt> -P models/
+wget <https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt>
 
 4️⃣ Run the Project
 
