@@ -119,7 +119,7 @@ while cap.isOpened():
     draw_traffic_light(frame)
 
     
-    cv2.imshow("AI Traffic Signal Control", frame)
+    cv2.imshow("AmbuRouteAI", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
