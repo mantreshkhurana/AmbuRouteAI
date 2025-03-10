@@ -10,11 +10,14 @@
 ## 🔧 Features
 
 ✅ **Real-time Ambulance Detection** – Uses YOLOv8 AI to identify ambulances from live traffic feeds.
-✅ **Smart Traffic Signal Control** – Dynamically changes traffic lights using OpenCV when an ambulance is detected.
-✅ **Live Video Processing** – Works with webcams or traffic camera feeds to analyze road conditions.
-✅ **Seamless Integration** – Can be extended to IoT-enabled smart city infrastructure.
-✅ **Scalable & Efficient** – Future-ready for integration with Google Maps API for real-time route optimization.
 
+✅ **Smart Traffic Signal Control** – Dynamically changes traffic lights using OpenCV when an ambulance is detected.
+
+✅ **Live Video Processing** – Works with webcams or traffic camera feeds to analyze road conditions.
+
+✅ **Seamless Integration** – Can be extended to IoT-enabled smart city infrastructure.
+
+✅ **Scalable & Efficient** – Future-ready for integration with Google Maps API for real-time route optimization.
 ⸻
 
 ## 🛠️ Tech Stack
