@@ -1,3 +1,4 @@
+import os
 import cv2
 import numpy as np
 import argparse
@@ -7,8 +8,9 @@ import googlemaps
 from flask import Flask, request, jsonify
 from geopy.distance import geodesic
 
-# GOOGLE_MAPS_API_KEY = "YOUR_GOOGLE_MAPS_API_KEY"
-# gmaps = googlemaps.Client(key=GOOGLE_MAPS_API_KEY)
+# Set GOOGLE_MAPS_API_KEY in your environment to enable GPS proximity/routing.
+GOOGLE_MAPS_API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY")
+gmaps = googlemaps.Client(key=GOOGLE_MAPS_API_KEY) if GOOGLE_MAPS_API_KEY else None
 
 model = YOLO("yolov8n.pt")
 
@@ -33,6 +35,8 @@ def update_gps():
     return jsonify({"status": "updated", "ambulance_id": ambulance_id, "location": gps_location})
 
 def is_ambulance_near(ambulance_gps):
+    if gmaps is None:
+        return False
     response = gmaps.distance_matrix(
         origins=[ambulance_gps],
         destinations=[TRAFFIC_SIGNAL_LOCATION],
@@ -42,6 +46,8 @@ def is_ambulance_near(ambulance_gps):
     return distance_meters < 200  
 
 def get_fastest_route(ambulance_gps, hospital_gps):
+    if gmaps is None:
+        return None, None
     directions = gmaps.directions(
         origin=ambulance_gps,
         destination=hospital_gps,
